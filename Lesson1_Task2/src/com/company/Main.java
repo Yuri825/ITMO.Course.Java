@@ -1,3 +1,6 @@
+// Найти алгебраическую сумму для выражения: 1 k + 2 k + 3 k + … + N k . N и степень k
+//вводит пользователь.
+
 package com.company;
 import java.util.Scanner;
 
@@ -19,17 +22,16 @@ public class Main {
             array[i] = a;
             a++;
         }
-        for (int i = 0; i < array.length; i++)
-        {
-            System.out.print("Элементы массива: " + array[i] + "\n");
-        }
+//        for (int i = 0; i < array.length; i++)
+//        {
+//            System.out.print("Элементы массива: " + array[i] + "\n");
+//        }
 
 
         double result = 0;
 
         for (int i = 1; i <= array.length; i++)
         {
-            //System.out.print(Math.pow(start, k) + "\n");
             result = result + Math.pow(i, k);
         }
         System.out.print("Result = " + result);
