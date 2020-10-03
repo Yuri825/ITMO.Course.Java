@@ -5,7 +5,7 @@ public class Shape
 
 
 
-    double volume;
+    double volume = 500;
 //
 //    Shape (double v)
 //    {

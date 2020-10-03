@@ -13,27 +13,20 @@ public class Main {
         Shape newShape = new Shape();
 
 
-
         // рассчитываем объем шара:
         // Блок ввода
         Scanner in = new Scanner(System.in);
         System.out.println("Введите радиус шара: ");
         double num = in.nextDouble();
 
-
         // Конструктор шара с введенным параметром радиуса
         Ball newBall = new Ball(num);
 
 
-
-
-//        newBox.volume = newBox.volume + newBall.volume;
-        System.out.println("Объем шара: " + newBall.volume);
-        System.out.println("Объем коробки: " + newShape.volume);
-
-
-
-
+        System.out.println("Объем шара: " + Math.round(newBall.volume));
+        newBox.volume =  newBox.add(newBox.volume, newBall.volume);
+        System.out.print("Текущий объем коробки: ");
+        System.out.println(Math.round(newBox.volume));
 
 
         // Рассчитываем объем пирамиды:
@@ -43,10 +36,12 @@ public class Main {
         double hg = in.nextDouble();
         // Конструктор пирамиды с введенными параметрами
         Pyramid newPyramid = new Pyramid(sq, hg);
-        System.out.println("Объем пирамиды: " + newPyramid.volume);
+        System.out.println("Объем пирамиды: " + Math.round(newPyramid.volume));
+        newBox.volume =  newBox.add(newBox.volume, newPyramid.volume);
+        System.out.print("Текущий объем коробки: ");
+        System.out.println(Math.round(newBox.volume));
 
-        newShape.volume = newShape.volume + newPyramid.volume;
-//        System.out.println("Общий объем: " + Box.add(newBox.volume, newShape.volume));
+
 
         // Рассчитываем объем цилиндра
         System.out.println("Введите радиус цилиндра : ");
@@ -55,10 +50,10 @@ public class Main {
         double hc = in.nextDouble();
         // Конструктор цилиндра с введенными параметрами
         Cylinder newCylinder = new Cylinder(rad, hc);
-        System.out.println("Объем цилиндра : " + newCylinder.volume);
-
-
-
+        System.out.println("Объем цилиндра : " + Math.round(newCylinder.volume));
+        newBox.volume =  newBox.add(newBox.volume, newCylinder.volume);
+        System.out.print("Текущий объем коробки: ");
+        System.out.println(Math.round(newBox.volume));
 
 
     }
