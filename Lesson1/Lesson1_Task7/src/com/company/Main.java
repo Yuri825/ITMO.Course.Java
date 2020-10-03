@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         // объявляем массив:
-	    int[] array = new int[] {1, 2, 3, 1, 2, 4, 3, 2};
+	    int[] array = new int[] {1, 2, 3, 1, 2, 4, 3, 2, 4, 5};
 
 
 	    // объявляем переменную для подсчета количества одинаковых элементов

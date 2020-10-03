@@ -59,7 +59,7 @@ public class Main {
         System.out.print("Сумма: " + "\n" + "X: " + sum(vector1.x, vector2.x) + "\n" + "Y: " + sum(vector1.y,
                 vector2.y) + "\n" + "Z: " + sum(vector1.z, vector2.z) + "\n");
 
-        System.out.print("Разность: " + "\n" + "X: " + difference(vector1.x, vector2.x) + "\n" + "Y: " + sum(vector1.y,
-                vector2.y) + "\n" + "Z: " + sum(vector1.z, vector2.z));
+        System.out.print("Разность: " + "\n" + "X: " + difference(vector1.x, vector2.x) + "\n" + "Y: " + difference(vector1.y,
+                vector2.y) + "\n" + "Z: " + difference(vector1.z, vector2.z));
     }
 }

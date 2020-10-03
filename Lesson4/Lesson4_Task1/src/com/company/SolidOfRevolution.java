@@ -4,7 +4,18 @@ public class SolidOfRevolution extends Shape
 {
     double radius;
 
-    public double getRadius() {
+    SolidOfRevolution (double v, double r)
+    {
+        super();
+        radius = r;
+    }
+
+    public SolidOfRevolution(double r) {
+        super();
+    }
+
+    double getRadius (SolidOfRevolution s)
+    {
         return radius;
     }
 }
