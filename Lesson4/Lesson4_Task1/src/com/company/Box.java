@@ -1,25 +1,39 @@
 package com.company;
 
-public class Box<box> extends Shape
+import java.util.ArrayList;
+
+public class Box extends Shape
 {
+    private double valBox; // сичтать доступное место
+    private ArrayList<Shape> shapes = new ArrayList<Shape>();
+
+    public Box(double valBox) {
+        super(valBox);
+        this.valBox = valBox;
+    }
+
+
 
 //  double valBox = 500;
 
 
-    public static double add (double valBox, double valShape)
+    public boolean add (Shape shape)
     {
-        if ((valBox - valShape) >= 0)
+
+        if (valBox >= shape.getVolume())
         {
-            valBox = valBox - valShape;
+            shapes.add(shape);
+            valBox -= shape.getVolume();
+
 //            System.out.println(Math.round(valBox));
-            return valBox;
+            return true;
         }
         else
         {
 
             System.out.println("Коробочка полна");
 //            System.out.println("Объем коробки: " + Math.round(valBox));
-            return valBox;
+            return false;
         }
 
     }

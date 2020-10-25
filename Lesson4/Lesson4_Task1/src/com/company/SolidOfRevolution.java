@@ -2,19 +2,20 @@ package com.company;
 
 public class SolidOfRevolution extends Shape
 {
-    double radius;
+    private double radius;
 
-    SolidOfRevolution (double v, double r)
-    {
-        super();
-        radius = r;
+//    SolidOfRevolution (double v, double r)
+//    {
+//        super();
+//        radius = r;
+//    }
+
+    public SolidOfRevolution(double volume, double radius) {
+        super(volume);
+        this.radius = radius;
     }
 
-    public SolidOfRevolution(double r) {
-        super();
-    }
-
-    double getRadius (SolidOfRevolution s)
+    double getRadius ()
     {
         return radius;
     }

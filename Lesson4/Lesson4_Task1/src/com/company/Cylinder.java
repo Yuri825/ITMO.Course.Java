@@ -6,10 +6,10 @@ public class Cylinder extends SolidOfRevolution
 
 
     // Объем цилиндра: v = П*r2*h
-   Cylinder(double r, double h) {
-        super(r);
-        height = h;
-        this.volume = Math.PI * r * r * height;
+  public Cylinder(double radius, double height)
+  {
+        super(Math.PI * radius * radius * height, radius);
+       this.height = height;
     }
 
 }
