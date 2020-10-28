@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Files.copy(Paths.get("file1.txt"), Paths.get("file2.txt"));
+        Files.copy(Paths.get("file1.txt"), Paths.get("file4.txt"));
     }
 
 

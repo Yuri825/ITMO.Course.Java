@@ -20,7 +20,7 @@ public class Main {
         for (File file : folder.listFiles())
         {
             // Если в названии файла содержится искомая строка ("3"), добавляем ее в коллекцию
-            if(file.getName().contains("3"))
+            if(file.getName().contains("il"))
             {
                 listFilesCont.add(file.getName());
             }

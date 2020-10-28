@@ -41,7 +41,7 @@ public class Main {
                    listText.add(line);
 
                    // если в коллекции есть искомая строка, добавляем название файла в коллекцию
-                    if(line.contains("второй"))
+                    if(line.contains("первый"))
                     {
 //                        System.out.println(file.getName());
                         listFilesCont.add(file.getName());

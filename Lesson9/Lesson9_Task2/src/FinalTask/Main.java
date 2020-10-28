@@ -24,6 +24,6 @@ public class Main {
 
         // Записываем строку
         fileOutputStream.write(str.getBytes());
-        System.out.println("Выролнено");
+        System.out.println("Выполнено");
     }
 }

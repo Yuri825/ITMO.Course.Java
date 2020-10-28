@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args)
     {
         // Проверяемый массив
-        int [][] arr = {{1,2,3,4}, {4,9,7,2},{5,7,8,3,2}};
+        int [][] arr = {{1,2,3,4}, {4,9,7,2},{5,7,8,3,4565,2}};
 
 
         try

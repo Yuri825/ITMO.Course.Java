@@ -8,7 +8,7 @@ public class Main
     public static void main(String[] args)
     {
         // Проверяемый массив
-        int [][] arr = new int[][] {{1,5,7}, {6,8,7}, {5,6,4}};
+        int [][] arr = new int[][] {{1,5,7}, {6,8,7,7}, {5,6,4}};
         try
         {
             System.out.println(ifSquare(arr));
