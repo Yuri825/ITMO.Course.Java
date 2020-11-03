@@ -22,7 +22,7 @@ public class Main
         // выводим на экран элементы нового массива
         for (int i = 0; i < filter(arr, 1).length; i++)
         {
-            System.out.println(filter(arr, 5)[i]);
+            System.out.println(filter(arr, 1)[i]);
         }
     }
 

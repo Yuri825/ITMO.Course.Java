@@ -2,25 +2,7 @@ package com.company;
 
 public class Shape
 {
-
-
-
-//    double volume = 500;
-
-    private double volume;
-
-    public Shape (double volume)
-    {
-        this.volume = volume;
-    }
-
-    public double getVolume ()
-    {
-        return volume;
-    }
-
-
-
+    double volume = 500;
 //
 //    Shape (double v)
 //    {

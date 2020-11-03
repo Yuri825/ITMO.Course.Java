@@ -20,7 +20,7 @@ public class Box extends Shape
             shapes.add(shape);
             valBox -= shape.getVolume();
             System.out.println(shape.getVolume());
-            System.out.println("Общий объём коробки: " + Math.round(valBox));
+            System.out.println("Общий объём коробки: " + valBox);
 
             return true;
         }

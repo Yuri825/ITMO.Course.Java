@@ -5,10 +5,10 @@ public class Ball extends SolidOfRevolution
 
     // Объем шара: V = 4/3 * П * r3
 
-   public Ball (double radius)
+   Ball (double r)
    {
-       super((Math.PI * radius*radius*radius)*4/3, radius);
-
+       super(r);
+        this.volume = (4 * Math.PI * r*r*r)/3;
    }
 
 

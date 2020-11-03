@@ -9,7 +9,7 @@ public class Pyramid extends Shape
     // S - площадь основания пирамиды
     // h - высота пирамиды
     Pyramid(double square, double height) {
-        super(Math.round((square * height) / 3));
+        super((square * height) / 3);
         this.square = square;
         this.height = height;
 

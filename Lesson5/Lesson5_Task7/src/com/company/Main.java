@@ -13,9 +13,9 @@ public class Main {
 
     public static void main(String[] args)
     {
-        decryptionSimple();
+//        decryptionSimple();
 //        encryptionSimple();
-//        encryptionWithKey();
+        encryptionWithKey();
     }
 
 
