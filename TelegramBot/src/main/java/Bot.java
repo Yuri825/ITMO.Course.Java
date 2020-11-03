@@ -51,33 +51,33 @@ public class Bot extends TelegramLongPollingBot
         String USERNAME = "NT Service\\MSSQLSERVER";
         String PASSWORD = "";
 
-        try
-        {
-            System.out.println("Устанавливаем соединение с базой данных");
-            connection = DriverManager.getConnection(URL_BD);
-
-            SQL = "SELECT*\n" +
-                    "FROM [dbo].[Table_1]";
-
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery(SQL);
-
-            while (resultSet.next())
-            {
-                value = resultSet.getString("Name");
-                System.out.println(value);
-            }
-
-
-        } catch (SQLException throwables)
-        {
-            throwables.printStackTrace();
-        }
-        finally
-        {
-            connection.close();
-            System.out.println("закрыто соединение с базой");
-        }
+//        try
+//        {
+//            System.out.println("Устанавливаем соединение с базой данных");
+//            connection = DriverManager.getConnection(URL_BD);
+//
+//            SQL = "SELECT*\n" +
+//                    "FROM [dbo].[Table_1]";
+//
+//            statement = connection.createStatement();
+//            resultSet = statement.executeQuery(SQL);
+//
+//            while (resultSet.next())
+//            {
+//                value = resultSet.getString("Name");
+//                System.out.println(value);
+//            }
+//
+//
+//        } catch (SQLException throwables)
+//        {
+//            throwables.printStackTrace();
+//        }
+//        finally
+//        {
+//            connection.close();
+//            System.out.println("закрыто соединение с базой");
+//        }
     }
 
 
